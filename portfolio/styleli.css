@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(132, 183, 240);
+    color: black;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    border-bottom: 1px solid rgb(87, 117, 213);
+    border-top: 1px solid rgb(87, 117, 213);
+    background-color: rgb(87, 117, 213);
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+nav ul li a:hover {
+    font-size: 1.1em;
+    color: rgb(175, 175, 230);
+}
+
+.left {
+    font-size: 1.7em;
+    
+}
+.left a{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.first {
+    justify-content: space-around;
+    display: flex;
+    margin: 180px 0;
+    align-items: center;
+
+}
+
+.first>div {
+    width: 30%;
+}
+
+.lsec {
+    font-size: 3.4em;
+
+}
+
+.lsec .btn {
+    padding: 12px;
+    background: rgb(83, 128, 179);
+    color: black;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+
+.rsec img {
+    width: 75%;
+    margin: 10px 70px;
+    border-radius: 200px;
+    height: 370px;
+    /* filter: drop-shadow(0px 0px 20px silver); */
+}
+
+
+.purple {
+    color: rgb(30, 72, 213);
+}
+
+#element {
+    color: rgb(30, 72, 213);
+}
+
+.second {
+    max-width: 80vw;
+    margin: auto;
+    height: 97 vh;
+}
+
+main hr {
+    border: 0;
+    background: rgb(63, 91, 182);
+    height: 1.2px;
+    margin: 80px 84px;
+}
+
+.second h1 {
+    font-size: 1.9em;
+}
+
+.far {
+    color: rgb(78, 76, 76);
+}
+
+.second .box {
+    background: black;
+    display: flex;
+    width: 80vw;
+    height: 2px;
+    margin: 56px 0;
+}
+
+.second .vertical {
+    height: 75px;
+    width: 1px;
+    background-color: black;
+    margin: 0 120px;
+}
+
+.img-top {
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+.vertical-title {
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 86px;
+    color: rgb(84, 83, 83);
+    width: 150px;
+    font-size: 12px;
+
+}
+
+#preloader {
+    background: #000f url(SVKl.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.text-pre {
+    text-align: center;
+    margin: 490px 0;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 340px;
+    background-color: rgb(97, 133, 172);
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+
+
+.footer_center {
+    text-align: center;
+    color: black;
+    padding: 12px 0;
+}
+/* Existing CSS code */
+
+/* Add a media query for screens less than 600px */
+@media (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    .first {
+        flex-direction: column;
+        margin: 80px 0;
+    }
+
+    .first > div {
+        width: 80%;
+    }
+
+    .rsec img {
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    .second {
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .second h1 {
+        font-size: 1.5em;
+    }
+
+    .vertical {
+        display: none;
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_center {
+        padding: 12px 0;
+    }
+}
+
+/* Add a media query for screens less than 1200px */
+@media (max-width: 1200px) {
+    /* Adjustments for medium-sized screens */
+    .first {
+        margin: 100px 0;
+    }
+
+    .first > div {
+        width: 50%;
+    }
+
+    .rsec img {
+        margin: 20px 50px;
+    }
+
+    main hr {
+        margin: 60px 40px;
+    }
+
+    .second {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .second h1 {
+        font-size: 1.7em;
+    }
+    .vertical-title {
+        display: block;
+        position: relative;
+        top: 20px; /* Adjust as needed */
+        width: 100%; /* Occupy full width */
+    }
+
+    .vertical-desc {
+        display: block;
+        position: relative;
+        top: 20px; /* Adjust as needed */
+        color: gray;
+        width: 100%; /* Occupy full width */
+        font-size: 14px; /* Adjust font size for readability */
+    }
+}
